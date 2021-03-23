@@ -6,7 +6,7 @@ def transform(signal):
     for n in range(N):
         for k in range(N):
             spectrum[n] += signal[k] * np.exp((2 * 1j * np.pi * k * n) / N)
-    return abs(spectrum)
+    return spectrum
 
 
 
